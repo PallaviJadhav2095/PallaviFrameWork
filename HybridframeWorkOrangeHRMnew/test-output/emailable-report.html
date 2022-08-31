@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">12</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,772</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestLayer.LoginPageTest</td><td><a href="#m0">validateLoginFunctionality</a></td><td rowspan="1">1660837842428</td><td rowspan="1">15639</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="6">TestLayer.HomePageTest</td><td><a href="#m1">validateHomePageAdminLink</a></td><td rowspan="1">1660837858097</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">validateHomePageLeaveLink</a></td><td rowspan="1">1660837858100</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">validateHomePageLogo</a></td><td rowspan="1">1660837858091</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">validateHomePagePIMLink</a></td><td rowspan="1">1660837858095</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">validateHomePageTitle</a></td><td rowspan="1">1660837858082</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">validateHomePageUrl</a></td><td rowspan="1">1660837858087</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="6">TestLayer.PIMPageTest</td><td><a href="#m7">validateCountryDropDown</a></td><td rowspan="1">1660837858113</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m8">validateDobDates</a></td><td rowspan="1">1660837858119</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m9">validateDrivingLicenseDate</a></td><td rowspan="1">1660837858110</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m10">validateMaritalStatusDropDown</a></td><td rowspan="1">1660837858116</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m11">validatePIMNewEmployee</a></td><td rowspan="1">1660837858104</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m12">validatePersonalDetailsInPIMPage</a></td><td rowspan="1">1660837858108</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">TestLayer.LoginPageTest#validateLoginFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: txtUsername
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;LAPTOP-TFVQBT0P&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:519)
+	at UtlisLayer.JSExecutor.enterdatausingJavaScriptExecutor(JSExecutor.java:11)
+	at PageLayer.LoginPage.loginFunctionality(LoginPage.java:26)
+	at TestLayer.LoginPageTest.validateLoginFunctionality(LoginPageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestLayer.HomePageTest#validateHomePageAdminLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method HomePageTest.validateHomePageAdminLink()[pri:5, instance:TestLayer.HomePageTest@4dbb42b7] depends on not successfully finished methods in group &quot;LoginPage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestLayer.HomePageTest#validateHomePageLeaveLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method HomePageTest.validateHomePageLeaveLink()[pri:6, instance:TestLayer.HomePageTest@4dbb42b7] depends on not successfully finished methods in group &quot;LoginPage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestLayer.HomePageTest#validateHomePageLogo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method HomePageTest.validateHomePageLogo()[pri:3, instance:TestLayer.HomePageTest@4dbb42b7] depends on not successfully finished methods in group &quot;LoginPage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestLayer.HomePageTest#validateHomePagePIMLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method HomePageTest.validateHomePagePIMLink()[pri:4, instance:TestLayer.HomePageTest@4dbb42b7] depends on not successfully finished methods in group &quot;LoginPage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestLayer.HomePageTest#validateHomePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method HomePageTest.validateHomePageTitle()[pri:1, instance:TestLayer.HomePageTest@4dbb42b7] depends on not successfully finished methods in group &quot;LoginPage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestLayer.HomePageTest#validateHomePageUrl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method HomePageTest.validateHomePageUrl()[pri:2, instance:TestLayer.HomePageTest@4dbb42b7] depends on not successfully finished methods in group &quot;LoginPage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestLayer.PIMPageTest#validateCountryDropDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PIMPageTest.validateCountryDropDown()[pri:4, instance:TestLayer.PIMPageTest@66f57048] depends on not successfully finished methods in group &quot;HomePage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestLayer.PIMPageTest#validateDobDates</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PIMPageTest.validateDobDates()[pri:6, instance:TestLayer.PIMPageTest@66f57048] depends on not successfully finished methods in group &quot;HomePage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestLayer.PIMPageTest#validateDrivingLicenseDate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PIMPageTest.validateDrivingLicenseDate()[pri:3, instance:TestLayer.PIMPageTest@66f57048] depends on not successfully finished methods in group &quot;HomePage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestLayer.PIMPageTest#validateMaritalStatusDropDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PIMPageTest.validateMaritalStatusDropDown()[pri:5, instance:TestLayer.PIMPageTest@66f57048] depends on not successfully finished methods in group &quot;HomePage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestLayer.PIMPageTest#validatePIMNewEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PIMPageTest.validatePIMNewEmployee()[pri:1, instance:TestLayer.PIMPageTest@66f57048] depends on not successfully finished methods in group &quot;HomePage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">TestLayer.PIMPageTest#validatePersonalDetailsInPIMPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PIMPageTest.validatePersonalDetailsInPIMPage()[pri:2, instance:TestLayer.PIMPageTest@66f57048] depends on not successfully finished methods in group &quot;HomePage&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

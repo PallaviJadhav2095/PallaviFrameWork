@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HybridframeWorkOrangeHRMnew by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-HomePage,PIMPage,LoginPage(failed)">
+    <groups>
+      <run>
+        <include name="HomePage"/>
+        <include name="PIMPage"/>
+        <include name="LoginPage"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestLayer.PIMPageTest">
+        <methods>
+          <include name="validateMaritalStatusDropDown"/>
+          <include name="validatePersonalDetailsInPIMPage"/>
+          <include name="validateDobDates"/>
+          <include name="validateDrivingLicenseDate"/>
+          <include name="validateCountryDropDown"/>
+          <include name="validatePIMNewEmployee"/>
+        </methods>
+      </class> <!-- TestLayer.PIMPageTest -->
+      <class name="TestLayer.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateLoginFunctionality"/>
+        </methods>
+      </class> <!-- TestLayer.LoginPageTest -->
+      <class name="TestLayer.HomePageTest">
+        <methods>
+          <include name="validateHomePageTitle"/>
+          <include name="validateHomePageLeaveLink"/>
+          <include name="validateHomePageLogo"/>
+          <include name="validateHomePageAdminLink"/>
+          <include name="validateHomePageUrl"/>
+          <include name="validateHomePagePIMLink"/>
+        </methods>
+      </class> <!-- TestLayer.HomePageTest -->
+    </classes>
+  </test> <!-- GRP-HomePage,PIMPage,LoginPage(failed) -->
+</suite> <!-- Failed suite [HybridframeWorkOrangeHRMnew by groups] -->
